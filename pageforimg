@@ -3,7 +3,7 @@
 <head>
 <style>
 body {
-	background: url("https://github.com/einzmetal/Heasley_Lab/blob/master/reddit_colo.jpg");
+	background: url("https://einzmetal.github.io/Heasley_Lab/reddit_colo.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
