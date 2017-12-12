@@ -81,6 +81,7 @@ a:active {
 }
 
 div.member {
+    display: inline-block;
     text-align: center;
     width: 50%;
     padding: 20px;
