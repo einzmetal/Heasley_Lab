@@ -81,10 +81,10 @@ a:active {
 }
 
 div.member {
-    text-align: left;
-    padding: 10%;
+    text-align: center;
+    padding: 25px;
     border-style: double;
     border-color: #ffffff;
-    border-width: 5px;
+    border-width: 6px;
 }
     
