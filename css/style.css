@@ -83,6 +83,7 @@ a:active {
 div.member {
     left: 10%;
     display: block;
+    position: relative;
     text-align: justify;
     width: 35%;
     padding: 16px;
