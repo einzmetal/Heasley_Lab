@@ -81,6 +81,7 @@ a:active {
 }
 
 div.member {
+    left: 10%;
     display: block;
     text-align: justify;
     width: 35%;
