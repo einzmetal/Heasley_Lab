@@ -81,6 +81,7 @@ a:active {
 }
 
 div.member {
+    color: green;
     display: block;
     text-align: justify;
     width: 35%;
