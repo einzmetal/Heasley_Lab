@@ -83,6 +83,7 @@ a:active {
 div.member {
     display: inline-block;
     text-align: justify;
+    height: 200px
     width: 35%;
     padding: 20px;
     border-style: double;
