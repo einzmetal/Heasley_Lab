@@ -81,13 +81,12 @@ a:active {
 }
 
 div.member {
-    color: green;
     display: block;
     text-align: justify;
     width: 35%;
-    padding: 20px;
+    padding: 16px;
     border-style: double;
-    border-color: #ffffff;
+    border-color: white;
     border-width: 6px;
 }
     
