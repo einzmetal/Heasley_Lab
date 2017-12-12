@@ -81,8 +81,8 @@ a:active {
 }
 
 div.member {
-    text-align: center;
-    width: 50%;
+    text-align: left;
+    padding: 10% 10% 10%;
     border-style: double;
     border-color: #ffffff;
     border-width: 5px;
