@@ -82,7 +82,8 @@ a:active {
 
 div.member {
     text-align: center;
-    padding: 25px;
+    width: 50%;
+    padding: 20px;
     border-style: double;
     border-color: #ffffff;
     border-width: 6px;
