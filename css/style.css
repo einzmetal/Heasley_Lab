@@ -92,8 +92,8 @@ div.member {
     border-width: 6px;
 }
     
-img {
+img.lab {
     border-radius: 10px;
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
 }
