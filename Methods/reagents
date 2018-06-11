@@ -1,0 +1,51 @@
+<!DOCTYPE>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<link rel="stylesheet" href="../css/style.css">
+  
+
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="../index.html">Home</a>	
+  <a href="../news/news.html">News</a>
+  <a href="../projects/projects.html">Projects</a>
+  <a href="../contact/contact.html">Contact</a>
+  <div class="dropdown">
+	<button class="dropbtn">More</button>
+	<div class="dropdown-content">
+		<a href="../aims/aims.html">Aims</a>
+		<a href="../members/members.html">Members</a>
+    <a href="../Methods/Methods.html">Methods</a>
+    <a class="active" href="reagents.html">Reagents</a>
+		<a href="../css/background.html">Here's a cool picture</a>
+	</div>
+  </div>
+</div>
+
+<ul>
+  <li>10x SDS</li>
+  <li>10x TGE</li>
+  <li>DMEM, 5% FBS</li>
+  <li>RPMI, 5% FBS</li>
+  <li>DMEM-F12, 5% FBS</li>
+  <li>MOC media, 5% FBS</li>
+  <li>2x Freezing Buffer</li>
+  <li>Western Blot buffers
+    <ul>
+    <li>Running Buffer</li>
+    <li>Transfer Buffer</li>
+    <li>Stripping Buffer</li>
+    <li>Blocking Buffer</li>
+    </ul>
+    </li>
+   <li>Map Kinase Lysis Buffer (MKLB)</li>
+   <li>LB plates</li> 
+  
+</ul>
+
+</body>
+</html>
