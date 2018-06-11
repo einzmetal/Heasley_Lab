@@ -81,12 +81,12 @@ a:active {
 }
 
 div.member {
-    left: 10%;
+    left: 5%;
     display: block;
     position: relative;
     text-align: justify;
     width: 35%;
-    padding: 16px;
+    padding: 20px;
     border-style: double;
     border-color: white;
     border-width: 6px;
