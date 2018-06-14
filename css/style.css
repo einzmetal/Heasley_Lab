@@ -110,3 +110,10 @@ img.lab {
     outline: none;
     transition: 0.4s;
 }
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
