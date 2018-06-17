@@ -36,7 +36,7 @@ a:active {
   text-decoration: none;
   font-size: 17px;
 }
-.topnav a:hover {
+.topnav .dropbtn a:hover {
   background-color: #ddd;
   color: black;
 }
