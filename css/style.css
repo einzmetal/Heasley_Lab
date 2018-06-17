@@ -18,7 +18,7 @@ a:hover {
     background-color: black;
     text-decoration: underline;
 }
-a:active {
+a.active {
     color: magenta;
     background-color: transparent;
     text-decoration: underline;
@@ -40,7 +40,7 @@ a:active {
   background-color: #ddd;
   color: black;
 }
-.topnav a:active {
+.topnav a.active {
     background-color: #4CAF50;
     color: white;
 }
