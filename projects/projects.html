@@ -23,7 +23,7 @@
   </div>
 </div>  
   
-  
+<div class="content">  
 <h1>Projects</h1>
 	<p>
 		blank text blank text blank text blank text </br>
@@ -47,5 +47,20 @@ blank text blank text blank text blank text </br>
 blank text blank text blank text blank text </br>
 blank text blank text blank text blank text </br>
 blank text blank text blank text blank text </br>
+</p>
+</div>
+<script>
+window.onscroll = function() {navLock()};
+var navbar = document.getElementById("myTopnav");
+var sticky = navbar.offsetTop;
+function navLock() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
 	</body>
 </html>
