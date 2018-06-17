@@ -27,6 +27,7 @@
   </div>
 </div>
 
+<div class="content">	
 <h1>The Heasley Lab</h1>
 
 <p title='hover info'>School of Dental Medicine, Anschutz Medical Campus</p>
@@ -37,17 +38,18 @@
 	<img class="lab" src="images/20160812_192116.jpeg">
 	</a>
 	
+	</div>	
 <script>
 window.onscroll = function() {navLock()};
 
-var topNav = document.getElementById("myTopNav");
-var sticky = topNav.offsetTop;
+var navbar = document.getElementById("myTopnav");
+var sticky = navbar.offsetTop;
 
 function navLock() {
   if (window.pageYOffset >= sticky) {
-    topNav.classList.add("sticky")
+    navbar.classList.add("sticky")
   } else {
-    topNav.classList.remove("sticky");
+    navbar.classList.remove("sticky");
   }
 }
 </script>
