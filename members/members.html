@@ -107,6 +107,19 @@
 <h2>Lab Alumni</h2>
 	<p>Previous staff/students, where they are now, what their projects were, etc.</p>	
 	
+	
+<script>
+window.onscroll = function() {navLock()};
+var navbar = document.getElementById("myTopnav");
+var sticky = navbar.offsetTop;
+function navLock() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>	
 </body>
 </html>
 
