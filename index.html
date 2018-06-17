@@ -36,6 +36,20 @@
 <a>
 	<img class="lab" src="images/20160812_192116.jpeg">
 	</a>
+	
+<script>
+window.onscroll = function() {navLock()};
 
+var topNav = document.getElementById("myTopNav");
+var sticky = topNav.offsetTop;
+
+function navLock() {
+  if (window.pageYOffset >= sticky) {
+    topNav.classList.add("sticky")
+  } else {
+    topNav.classList.remove("sticky");
+  }
+}
+</script>
 </body>
 </html>
