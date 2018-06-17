@@ -83,6 +83,7 @@ a:active {
 
 div.member {
     left: 5%;
+    overflow: hidden;
     display: block;
     position: relative;
     text-align: justify;
