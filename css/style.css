@@ -117,6 +117,7 @@ img.lab {
 .accordion {
     background-color: inherit;
     display: block;
+    position: relative;
     font-size: inherit;
     font-family: inherit;
     left: 5%;
