@@ -115,22 +115,33 @@ img.lab {
 }
 
 .accordion {
-    background-color: #eee;
+    background-color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    left: 5%;
     color: #444;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
+    width: 45%;
     text-align: left;
-    border: none;
+    border-width: 8px;
+    border-style: double;
+    border-color: white;
+    z-index: 0;
     outline: none;
-    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+	background-color: #00d1f2;
 }
 
 .panel {
     padding: 0 18px;
-    background-color: white;
-    display: none;
+    background-color: inherit;
     overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.25s ease-out;
+    
 }
 
 .sticky {
