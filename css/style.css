@@ -148,7 +148,7 @@ img.lab {
     border-width: 2px;
     outline: none;
     left: 5%;
-    text-alignment: justify;
+    text-align: justify;
     position: relative;
     width: 45%;
     transition: max-height 0.25s ease-out;
