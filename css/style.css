@@ -102,6 +102,7 @@ a:active {
 
 .dropdown:hover .dropdown-content {
     display: block;
+    position: fixed;
 }
 
 div.member {
