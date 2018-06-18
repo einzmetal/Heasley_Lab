@@ -15,7 +15,7 @@ div.member {
     border-style: double;
     border-color: white;
     border-width: 6px;
-    z-index: -1;
+    z-index: 0;
 }
 
 a:link {
@@ -44,6 +44,7 @@ a:active {
 .topnav {
   overflow: hidden;
   background-color: #00b3b3;
+  z-index: 1;
 }
 
 .topnav a {
