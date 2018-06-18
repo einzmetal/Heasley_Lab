@@ -15,6 +15,7 @@ div.member {
     border-style: double;
     border-color: white;
     border-width: 6px;
+    z-index: -1;
 }
 
 a:link {
