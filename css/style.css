@@ -4,6 +4,10 @@ body{
     background-color: powderblue;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 div.member {
     left: 5%;
     overflow: hidden;
