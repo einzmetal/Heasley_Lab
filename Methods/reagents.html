@@ -25,26 +25,25 @@
 	</div>
   </div>
 </div>
+	
 <div class="content">	
 	<h1>Reagents</h1>
 <ul>
-
-
-  <div class="member">
-	<li>10x SDS
-	<ul>
+	
+<button class="accordion">10x SDS</button>
+  <div class="panel">
 	  <li>121.1g Tris-Base</li>
 		<li>576.7g Glycine</li>
 		  <li>40g SDS</li>
 		  <li>Bring to 4L DI Water</li>
 		  <li>Adjust pH to 8.63</li>
-		</ul>
-	  </li>
 	</div>
 	
-  <div class="member">	
-  <li>10x TGE</li>
+<button class="accordion">10x TGE</button>	
+  <div class="panel">	
+	  <li>???</li>
 	</div>
+	
   <div class="member">	
   <li>DMEM, 5% FBS</li>
 	</div>
@@ -60,17 +59,16 @@
   <div class="member">	
   <li>2x Freezing Buffer</li>
 	</div>
-  <div class="member">	
-  <li>Western Blot buffers
-    <ul>
+
+<button class="accordion">Western Blot buffers</button>	
+  <div class="panel">	
     <li>Running Buffer</li>
 	    <li>TBST</li>	    
     <li>Transfer Buffer</li>
     <li>Stripping Buffer</li>
     <li>Blocking Buffer</li>
-    </ul>
-    </li>
 	</div>
+	
   <div class="member">	
    <li>Map Kinase Lysis Buffer (MKLB)</li>
 	</div>
@@ -85,13 +83,10 @@
 	</div>
   <div class="member">
   <li>Drug stocks</li>
-	</div>
-	  
-	  
-  
+	</div>  
 </ul>
+</div>	
 	
-	</div>	
 <script>
 window.onscroll = function() {navLock()};
 var navbar = document.getElementById("myTopnav");
@@ -103,6 +98,20 @@ function navLock() {
     navbar.classList.remove("sticky");
   }
 }
+	
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}		
 </script>
 </body>
 </html>
