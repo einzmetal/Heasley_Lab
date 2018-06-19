@@ -142,7 +142,7 @@ img.lab {
 }
 
 .panel {
-    padding: 0 18px;
+    padding: 8px 24px;
     background-color: inherit;
     overflow: hidden;
     max-height: 0;
