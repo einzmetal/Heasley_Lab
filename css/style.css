@@ -2,7 +2,7 @@ body{
     text-align: center; 
     margin: 0;
     background-color: #02d1d8;
-    background: linear-gradient(to bottom right, #02d1d8, #2bd102);
+    background: linear-gradient(to bottom right, #02d1d8, #2bd102) fixed;
 }
 
 * {
