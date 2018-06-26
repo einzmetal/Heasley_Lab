@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accsub, .acco {
+    background-color: #eee;
+    border-width: 8px;
+    border-style: double;
+    border-color: white;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: .4s;
+}
+
+.active, .accsub:hover, .acco:hover {
+    background-color: cyan;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.subpanel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.hide {
+	display: none;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Animated Accordion</h2>
+<p>Click on the buttons to open the collapsible content.</p>
+
+<button class="acco">Section 1</button>
+<div class="panel" id="panel">
+  <li>Item 1</li>
+  <button class="accsub">Item 2</button>  
+  <div class = "subpanel" id ="subpanel" ><ul><li>Sub-item 1</li>
+  							<li>Sub-item 2</li>
+                            </ul>
+                            </div>
+                            
+  <button class="accsub" id="subpanel">Item 3</button>
+  <div class = "subpanel" id ="subpanel" ><ul><li>More stuff</li>
+  							</ul>
+                            </div>
+                           
+</div>
+<button class="acco">Section 2</button>
+<div class="panel" id="panel">
+  <li>Item 4</li>
+  <button class="accsub">Item 5</button>  
+  <div class = "subpanel" id ="subpanel"><ul><li>Sub-item 6</li>
+  							<li>Sub-item 7</li>
+                            </ul>
+                            </div>
+                            
+  <button class="accsub" id="subpanel">Item 8</button>
+  <div class = "subpanel" id ="subpanel"><ul><li>More stuff9</li>
+  							</ul>
+                            </div>
+                           
+</div>
+
+
+
+<script>
+var acc = document.getElementsByClassName("acco");
+var acs = document.getElementsByClassName("accsub");
+var i;
+var subclass = document.getElementsByClassName("subpanel");
+var sub = document.getElementById("subpanel");
+var y = sub.scrollHeight;
+var k;
+var j;
+
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    var parpanel = this.previousElementSibling;
+    var nexpanel = this.nextSibling;
+    parpanel.classList.remove("active");
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+      panel.style.border = "none";      
+      
+    } 
+    else {      
+      panel.style.maxHeight = panel.scrollHeight + 10*y + "px";
+      panel.style.border = "1px solid red";
+      parpanel.style.maxHeight = null;
+      parpanel.style.border = "none";
+      
+      
+    } 
+  });
+}
+
+for (j = 0; j < acs.length; j++) {
+  acs[j].addEventListener("click", function() {
+    this.classList.remove("hide");
+    this.classList.toggle("active");
+    var ipanel = this.nextElementSibling;
+    if (ipanel.style.maxHeight){    
+      ipanel.style.maxHeight = null;
+      ipanel.style.border = "none";
+    } 
+    else { 
+      ipanel.style.maxHeight = y + "px";
+      ipanel.style.border = "1px solid red";
+      
+    } 
+  });
+}
+
+</script>
+
+</body>
+</html>
